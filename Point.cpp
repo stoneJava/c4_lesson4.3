@@ -42,8 +42,8 @@ void print(Point &a){
     a.Display();
 }
 int main(int argc ,char* argv[]){
-   /* cout << argc << endl;
-    cout << argv[0] << endl;*/
+
+
     Point A , B, *p;
     Point &RA = A;
     A.Setxy(25, 55);
