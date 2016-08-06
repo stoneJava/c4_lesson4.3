@@ -1,0 +1,11 @@
+cmake_minimum_required(VERSION 3.5)
+project(c4_lesson4_3)
+#防止生产exe 后缺少dll
+if(WIN32)
+    set(CMAKE_CXX_FLAGS "-static-libgcc -static-libstdc++")
+endif(WIN32)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+set(SOURCE_FILES Point.cpp)
+add_executable(c4_lesson4_3 ${SOURCE_FILES})
